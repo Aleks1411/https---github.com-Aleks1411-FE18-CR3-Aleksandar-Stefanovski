@@ -1,0 +1,30 @@
+  <div class="conteiner" style="background-color: rgb(221, 192, 248);">
+  <div class="card mb-3" style="max-width: 540px; ">
+    <div *ngFor="let item of cart" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src={{item.img}} class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5><hr>
+          <p class="card-text">{{item.details}}</p>
+          <p class="card-text"><small class="text-muted">{{item.price}}</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+<div class="container mb-5">
+  <h1>Order Form</h1>
+  <form>
+      <label  for="name">Name:</label> <br>
+      <input class="o" style="background-color: rgb(187, 227, 243);" type="text"> <br>
+      <label for="Address">Address:</label><br>
+      <input class="o" style="background-color: rgb(187, 227, 243);"type="text"> <br>
+      <button text="submit" class="btn btn-primary m-2">Submit</button> &
+      <button class="btn btn-primary">Order</button>
+  </form>
+</div>
+</div>

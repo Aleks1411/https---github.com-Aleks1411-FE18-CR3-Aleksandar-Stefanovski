@@ -1,0 +1,30 @@
+ul {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+    }      li {
+        padding: 10px;
+        
+    }
+
+    .form {
+        /* margin: 5px; */
+        text-align: center;
+        background: rgb(243, 243, 152);
+    }
+    .rights   p {
+        text-align: center;
+        /* background-color: azure; */
+        margin: 5px;
+    }
+    .foot{
+        background: red;
+        display: grid;
+    
+    } 
+    .ppp {
+        margin: 10px;
+        
+    }

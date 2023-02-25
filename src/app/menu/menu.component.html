@@ -1,0 +1,26 @@
+<h1 class="rt" style="text-align: center; color: red;">Meun</h1>
+<div class="conteiner my-5">
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 ">
+        <div *ngFor="let products of piza; index as id" class="text-center">
+            <div class="card" style="width: 20rem; height: 550px; box-shadow:0px 5px 5px 5px gray; top: 0; margin: 0 auto;">
+                <img src="{{products.img}}" class="card-img-top ">
+                <div class="card-body">
+                    <h5 class="card-title">{{products.name}}</h5>
+                    <p>€ {{products.price}}</p>
+                    
+                    
+                    <div class="card-body">
+                        <ng-template [ngIf]="products.available === true" [ngIfElse]="alex">
+                            <p class="btn btn-warning m-3" (click)="addToCart(products)" >Order Now</p>
+                            <a class="btn btn-primary" routerLink="/products/{{ id }}">Details</a>
+                        </ng-template>
+                        <ng-template #alex>
+                            <p style="color: brown;" >Not available!</p>
+                        </ng-template>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
